@@ -47,7 +47,7 @@ body::before{
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
+  background-image: url(m.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -117,9 +117,6 @@ main::-webkit-scrollbar{
   }
 }
 /* navbar styles end */
-
-
-
 /* Hero section styles */
 .heroSection{
   margin: 2rem 0;
@@ -145,12 +142,10 @@ main::-webkit-scrollbar{
 .herosectionDetails > h1{
   font-size: 50px;
   margin: 10px;
+
 }
 
 /* Hero section styles end */
-
-
-
 /* about me styles */
 .aboutMe{
   margin: 1rem;
@@ -166,6 +161,11 @@ main::-webkit-scrollbar{
   align-items: center;
   justify-content: center;
   width: calc(100% - 2rem);
+}
+
+.Experience {
+    margin: auto;
+    text-align: center;
 }
 
 @media only screen and (max-width: 720px){
@@ -275,11 +275,13 @@ main::-webkit-scrollbar{
     font-size: 30px;
     margin-top: 1.5rem;
     margin-bottom: 0rem;
+    text-align: center;
   } 
 
   .herosectionDetails > h3{
     font-size: 20px;
     margin: 0;
     font-weight: 400;
+    text-align: center;
   }
 }
