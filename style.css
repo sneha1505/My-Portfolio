@@ -20,7 +20,8 @@ html{
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #ec5fa6;
+   
 }
 ::-webkit-scrollbar-thumb {
   background: #888; 
@@ -108,7 +109,7 @@ main::-webkit-scrollbar{
 
 .navigationMenu > a:hover{
   transition: ease-in-out 300ms;
-  background: white;
+  background: rgb(230, 96, 189);
 }
 
 @media only screen and (max-width: 760px){
@@ -125,6 +126,7 @@ main::-webkit-scrollbar{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 
 .profileImage{
@@ -133,16 +135,20 @@ main::-webkit-scrollbar{
   object-fit: cover;
   object-position: center;
   border-radius: 5px;
+  animation-name: slide;
 }
 
-.herosectionDetails{
+.herosectionDetails {
   text-align: center;
+  
 }
 
-.herosectionDetails > h1{
+.herosectionDetails > h1:hover{
   font-size: 50px;
   margin: 10px;
-
+  animation-name: rotate;
+  animation-duration: 1s;
+  cursor: pointer;
 }
 
 /* Hero section styles end */
@@ -166,6 +172,7 @@ main::-webkit-scrollbar{
 .Experience {
     margin: auto;
     text-align: center;
+   
 }
 
 @media only screen and (max-width: 720px){
@@ -181,7 +188,12 @@ main::-webkit-scrollbar{
   min-height: 250px;
 }
 
-.skillsAndProjects > .skills, .skillsAndProjects > .projects{
+.skillsAndProjects > .skills,.skillsAndProjects> .skills{
+  animation-name: fadeIn;
+  animation-duration: 0.7s;
+}
+
+.skillsAndProjects > .skills, .skillsAndProjects > .projects:hover{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -192,11 +204,14 @@ main::-webkit-scrollbar{
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 2rem;
+  animation-name: fadeIn;
+  animation-duration: 0.7s;
+  
 }
 
 .cardHeading{
   display: block;
-  width: 90%;
+  width: 100%;
   /* text-align: center; */
   margin: 0;
   margin-bottom: 1rem;
@@ -217,17 +232,22 @@ main::-webkit-scrollbar{
 
 .projectContainer{
   display: flex;
-  width: 90%;
+  width: 100%;
+
 }
 
 .projectContainer > img{
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   padding-right: 10px;
+  
 }
 
-.projectContainer > .projectDescription > h4{
+.projectContainer > .projectDescription > h4:hover{
   margin: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  cursor: pointer;
 }
 
 .projectContainer > .projectDescription > p{
@@ -283,5 +303,24 @@ main::-webkit-scrollbar{
     margin: 0;
     font-weight: 400;
     text-align: center;
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
