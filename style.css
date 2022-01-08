@@ -135,7 +135,7 @@ main::-webkit-scrollbar{
   object-fit: cover;
   object-position: center;
   border-radius: 5px;
-  animation-name: slide;
+
 }
 
 .herosectionDetails {
@@ -160,7 +160,7 @@ main::-webkit-scrollbar{
 /* about me styles end */
 
 .skillsAndProjects{
-  margin: 1rem;
+  margin: auto;
   display: grid;
   grid-template-columns: [one] 50% [two] 50%;
   grid-gap: 10px;
@@ -169,9 +169,20 @@ main::-webkit-scrollbar{
   width: calc(100% - 2rem);
 }
 
-.Experience {
-    margin: auto;
-    text-align: center;
+.Experience{
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: [one] 50%;
+  grid-gap: 10px;
+  align-items: center;
+  background-color: rgb(255 255 255 / 31%);
+  border: 1px solid rgb(255 255 255 / 31%);
+  border-radius: 5px;
+  padding: 1rem;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  
    
 }
 
@@ -185,6 +196,7 @@ main::-webkit-scrollbar{
 .skillsAndProjects > .skills,.skillsAndProjects> .projects{
   min-width: 250px;
   margin: 1rem;
+  margin-bottom: 2rem;
   min-height: 250px;
 }
 
@@ -203,7 +215,7 @@ main::-webkit-scrollbar{
   border: 1px solid rgb(255 255 255 / 31%);
   border-radius: 5px;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   animation-name: fadeIn;
   animation-duration: 0.7s;
   
